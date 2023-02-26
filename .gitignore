@@ -2,3 +2,4 @@ __pycache__/
 versions/
 .env
 venv
+.env.prod

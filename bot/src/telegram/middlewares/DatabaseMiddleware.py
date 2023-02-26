@@ -3,7 +3,7 @@ from aiogram import BaseMiddleware
 from aiogram.types import Update
 from sqlalchemy.exc import IntegrityError
 
-from typing import Callable, Dict, Any, Awaitable
+from typing import Callable, Dict, Any
 
 
 class DatabaseMiddleware(BaseMiddleware):

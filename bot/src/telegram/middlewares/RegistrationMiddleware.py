@@ -3,7 +3,7 @@ from aiogram.types import Message
 
 from database import models
 
-from typing import Callable, Dict, Any, Awaitable
+from typing import Callable, Dict, Any
 
 
 class RegistrationMiddleware(BaseMiddleware):

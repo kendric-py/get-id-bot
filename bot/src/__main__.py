@@ -6,12 +6,9 @@ from telegram.routers.client.handlers import client_router
 
 from database.manage import async_session
 
-import asyncio
-
 from config import BOT_TOKEN
 
-
-
+import asyncio
 
 
 async def main():
@@ -23,10 +20,7 @@ async def main():
 
     dp.include_router(client_router)
 
-
     await dp.start_polling(bot, async_session=async_session)
-
-
 
 
 asyncio.run(main())
