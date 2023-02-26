@@ -10,3 +10,12 @@ services:
       - 5432:5432
     env_file:
       - .env
+
+  bot:
+    restart: 'always'
+    env_file:
+      - .env.prod
+    build: ./bot
+    container_name: bot
+    depends_on:
+      - database
